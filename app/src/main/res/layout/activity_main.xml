@@ -55,4 +55,14 @@
         android:layout_alignStart="@+id/esteh"
         android:layout_marginTop="14dp"
         android:id="@+id/totalharga" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:id="@+id/notif"
+        android:layout_below="@+id/totalharga"
+        android:layout_alignStart="@+id/totalharga"
+        android:layout_marginStart="40dp"
+        android:textSize="18sp" />
 </RelativeLayout>
