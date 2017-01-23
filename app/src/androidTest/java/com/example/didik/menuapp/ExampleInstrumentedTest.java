@@ -1,4 +1,4 @@
-package com.example.didik.mycheckboxapp;
+package com.example.didik.menuapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.didik.mycheckboxapp", appContext.getPackageName());
+        assertEquals("com.example.didik.menuapp", appContext.getPackageName());
     }
 }

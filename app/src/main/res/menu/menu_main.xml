@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.didik.menuapp.MainActivity">
+    <group >
+        <item android:title="First Activity"
+            android:id="@+id/firstactivity"
+            android:checkable="true" />
+        <item android:title="Second Activity"
+            android:id="@+id/secondactivity"
+            android:checkable="true" />
+        <item android:title="Third Activity"
+            android:id="@+id/thirdactivity"
+            android:checkable="true" />
+    </group>
+</menu>

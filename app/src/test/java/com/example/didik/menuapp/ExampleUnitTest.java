@@ -1,4 +1,4 @@
-package com.example.didik.mycheckboxapp;
+package com.example.didik.menuapp;
 
 import org.junit.Test;
 
