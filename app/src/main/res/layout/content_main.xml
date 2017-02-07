@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--Created by: Didik Setiawan - 201422102-->
+<!--Universitas Surakarta-->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -17,8 +21,36 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="First Activity"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
         android:textSize="30sp"
-        android:id="@+id/firstactivity" />
+        android:id="@+id/firstactivity"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:text="100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="45dp"
+        android:id="@+id/checkBox1"
+        android:layout_below="@+id/firstactivity"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:text="200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox1"
+        android:layout_alignStart="@+id/checkBox1"
+        android:layout_marginTop="17dp"
+        android:id="@+id/checkBox2" />
+
+    <CheckBox
+        android:text="300"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox2"
+        android:layout_alignStart="@+id/checkBox2"
+        android:layout_marginTop="15dp"
+        android:id="@+id/checkBox3" />
 </RelativeLayout>

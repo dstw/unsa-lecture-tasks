@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--Created by: Didik Setiawan - 201422102-->
+<!--Universitas Surakarta-->
+
+<android.support.design.widget.CoordinatorLayout
+android:id="@+id/myCoordinatorLayout"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<!-- Here are the existing layout elements, now wrapped in
+     a CoordinatorLayout -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_second"
@@ -15,7 +28,125 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/secondactivity"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/secondactivity"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="46dp"
+        android:id="@+id/editText1"
+        android:singleLine="false"
+        style="@style/Widget.AppCompat.EditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/editText1"
+        android:layout_alignStart="@+id/editText1"
+        android:layout_marginTop="22dp"
+        android:id="@+id/editText2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/editText1"
+        android:layout_alignStart="@+id/editText1"
+        android:layout_marginTop="22dp"
+        android:id="@+id/editText2"
+        style="@style/Widget.AppCompat.EditText" />
+
+    <TextView
+        android:text="Nilai 1:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/editText1"
+        android:textSize="18sp"
+        android:layout_above="@+id/editText2" />
+
+    <TextView
+        android:text="Nilai 2:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textSize="18sp"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignBottom="@+id/editText2" />
+
+    <Button
+        android:text="x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMultiply"
+        android:textSize="30sp"
+        android:layout_below="@+id/btnPlus"
+        android:layout_alignStart="@+id/btnPlus"
+        android:layout_marginTop="26dp" />
+
+    <Button
+        android:text="/"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDivide"
+        android:textSize="30sp"
+        android:layout_alignBottom="@+id/btnMultiply"
+        android:layout_alignTop="@+id/btnMultiply"
+        android:layout_alignStart="@+id/btnMin" />
+
+    <Button
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMin"
+        android:textSize="30sp"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="30sp" />
+        android:layout_alignEnd="@+id/editText2"
+        android:layout_marginEnd="37dp" />
+
+    <Button
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPlus"
+        android:textSize="30sp"
+        android:layout_marginStart="29dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:text="Hasil:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="18sp"
+        android:layout_below="@+id/btnMultiply"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginTop="38dp"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignEnd="@+id/btnDivide"
+        android:id="@+id/hasil"
+        android:textSize="24sp" />
+
 </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
